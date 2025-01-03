@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5;
+    color: #333;
+}
+
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+}
+
+.column {
+    padding: 20px;
+    box-sizing: border-box;
+    border-right: 1px solid #E0E0E0;
+    overflow-y: auto;
+}
+
+.command-section {
+    width: 21%;
+    background-color: #57B3E4;
+    color: white;
+}
+
+.transaction-section {
+    width: 45%;
+    background-color: white;
+    color: #333;
+}
+
+.log-section {
+    width: 34%;
+    background-color: #0082CA;
+    color: white;
+}
+
+.logs{
+    margin-top:20px;
+}
+
+button {
+    background-color: #0082CA;
+    color: white;
+    border: none;
+    padding: 8px;
+    margin: 5px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 13px;
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 12px;
+    font-family: monospace;
+    background-color: #f9f9f9;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h2, h3, h4 {
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+.card-details, .transaction-details {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.card-details table, .transaction-details table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    table-layout: fixed; /* 열의 크기 고정 */
+}
+
+.card-details th, .transaction-details th,
+.card-details td, .transaction-details td {
+    border: 1px solid #E0E0E0;
+    padding: 8px; /* 글씨 크기 줄이기 */
+    text-align: left;
+    font-size: 12px; /* 글씨 크기 줄이기 */
+}
+
+.card-details th, .transaction-details th {
+    background-color: #F5F5F5;
+    font-weight: bold;
+}
+
+.card-details td, .transaction-details td {
+    word-wrap: break-word; /* 텍스트가 길 경우 줄바꿈 */
+}
+
+.card-details tr:nth-child(even), .transaction-details tr:nth-child(even) {
+    background-color: #FAFAFA;
+}
+
+/* CI, Ref ID, Created At 비율 설정 (55%, 35%, 10%) */
+.card-details th:nth-child(1),
+.card-details td:nth-child(1) {
+    width: 55%;
+}
+
+.card-details th:nth-child(2),
+.card-details td:nth-child(2) {
+    width: 35%;
+}
+
+.card-details th:nth-child(3),
+.card-details td:nth-child(3) {
+    width: 10%;
+}
+
+.transaction-details th:nth-child(1),
+.transaction-details td:nth-child(1) {
+    width: 30%;
+}
+
+.transaction-details th:nth-child(2),
+.transaction-details td:nth-child(2) {
+    width: 30%;
+}
+
+.transaction-details th:nth-child(3),
+.transaction-details td:nth-child(3) {
+    width: 20%;
+}
+
+.transaction-details th:nth-child(4),
+.transaction-details td:nth-child(4) {
+    width: 20%;
+}
+
+
+.command-section {
+    width: 25%;
+    background-color: #57B3E4;
+    color: white;
+}
+
+.card-registration, .transaction-request {
+    margin-bottom: 20px; /* 각 섹션 간 간격 추가 */
+    margin-top: 20px;
+}
+
+.card-registration input, .transaction-request input,
+.card-registration select, .transaction-request select,
+.card-registration button, .transaction-request button {
+    display: block; /* 한 줄에 하나씩 배치 */
+    width: 100%; /* 가로 너비를 100%로 설정 */
+    margin: 10px 0; /* 인풋 박스 간격 추가 */
+    padding: 8px; /* 내부 여백 추가 */
+    font-size: 14px; /* 글씨 크기 조정 */
+    box-sizing: border-box; /* 패딩 포함 너비 계산 */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.card-registration button, .transaction-request button {
+    background-color: #0082CA;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.card-registration button:hover, .transaction-request button:hover {
+    background-color: #005c99; /* 버튼 hover 효과 */
+}
+
+.card-registration h3, .transaction-request h3 {
+    margin-bottom: 15px; /* 제목과 첫 번째 인풋 박스 사이 간격 */
+    font-size: 18px; /* 제목 크기 */
+    margin-top: 30px;
+}
+
+h1{
+    text-align: center;
+}
